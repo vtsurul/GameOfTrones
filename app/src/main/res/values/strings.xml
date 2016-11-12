@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Game of thrones</string>
+
+    <string name="ff_condensed">sans-serif-condensed</string>
+    <string name="ff_medium">sans-serif-medium</string>
+    <string name="ff_regular">sans-serif-regularb</string>
+
+    <string name="error_network_unavailable">"Сеть недоступна. Попробуйте позже."</string>
+    <string name="error_database_crash">Невосстановимая ошибка базы данных.</string>
+
+    <string name="stark">Stark</string>
+    <string name="lannister">Lannister</string>
+    <string name="targaryen">Targaryen</string>
+
+</resources>

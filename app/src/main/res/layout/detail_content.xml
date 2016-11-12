@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_S_16"
+        android:columnCount="3"
+        android:rowCount="6">
+
+        <ImageView
+            style="@style/ItemRowImage"/>
+
+        <TextView
+            style="@style/ItemRowTitle"
+            android:text="Words"/>
+
+        <TextView
+            android:id="@+id/item_words"
+            style="@style/ItemRowValue"/>
+
+        <View
+            android:layout_height="@dimen/spacing_S_8"
+            android:layout_columnSpan="3"/>
+
+        <ImageView
+            style="@style/ItemRowImage"/>
+
+        <TextView
+            style="@style/ItemRowTitle"
+            android:text="Born"/>
+
+        <TextView
+            android:id="@+id/item_born"
+            style="@style/ItemRowValue"/>
+
+        <View
+            android:layout_height="@dimen/spacing_S_8"
+            android:layout_columnSpan="3"/>
+
+        <ImageView
+            style="@style/ItemRowImage"/>
+
+        <TextView
+            style="@style/ItemRowTitle"
+            android:text="Titles"/>
+
+        <TextView
+            android:id="@+id/item_titles"
+            style="@style/ItemRowValue"/>
+
+        <View
+            android:layout_height="@dimen/spacing_S_8"
+            android:layout_columnSpan="3"/>
+
+        <ImageView
+            style="@style/ItemRowImage"/>
+
+        <TextView
+            style="@style/ItemRowTitle"
+            android:text="Aliases"/>
+
+        <TextView
+            android:id="@+id/item_aliases"
+            style="@style/ItemRowValue"/>
+
+        <View
+            android:layout_height="@dimen/spacing_S_8"
+            android:layout_columnSpan="3"/>
+
+        <TextView
+            style="@style/ItemRowTitle"
+            android:layout_column="1"
+            android:text="Father"/>
+
+        <Button
+            android:id="@+id/item_father"
+            style="@style/ItemButton"/>
+
+        <View
+            android:layout_height="@dimen/spacing_S_8"
+            android:layout_columnSpan="3"/>
+
+        <TextView
+            style="@style/ItemRowTitle"
+            android:layout_column="1"
+            android:text="Mother"/>
+
+        <Button
+            android:id="@+id/item_mother"
+            style="@style/ItemButton"
+            android:layout_marginBottom="@dimen/spacing_S_16"/>
+
+    </GridLayout>
+
+</LinearLayout>

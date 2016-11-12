@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/character_icon_iv"
+            android:layout_marginTop="@dimen/spacing_S_8"
+            android:layout_marginBottom="@dimen/spacing_S_8"
+            android:layout_marginLeft="@dimen/spacing_S_8"
+            android:layout_marginRight="@dimen/spacing_S_16"
+            android:layout_gravity="top"
+            android:src="@drawable/ic_item_brown_24dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/character_name_tv"
+                android:textColor="@color/color_primary"
+                android:textSize="@dimen/font_M_20"
+                android:fontFamily="@string/ff_medium"
+                android:layout_marginTop="@dimen/spacing_S_8"
+                android:layout_marginLeft="@dimen/spacing_S_8"
+                android:layout_marginRight="@dimen/spacing_S_8"
+                android:text="Имя персонажа"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/character_titles_tv"
+                android:textColor="@color/color_primary_dark"
+                android:textSize="@dimen/font_S_14"
+                android:fontFamily="@string/ff_condensed"
+                android:layout_marginBottom="@dimen/spacing_S_8"
+                android:layout_marginLeft="@dimen/spacing_S_8"
+                android:layout_marginRight="@dimen/spacing_S_8"
+                android:text="Титулы персонажа"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+
+</LinearLayout>
