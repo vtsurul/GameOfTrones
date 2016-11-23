@@ -4,26 +4,16 @@ import android.support.annotation.Nullable;
 
 import com.softdesign.gameofthrones.mvp.views.IView;
 
+// <T extends IView>
+public interface IPresenter {
 
-public abstract class IPresenter<T extends IView> {
+    <T extends IView>
+    void takeView(T view);
 
-    private T mView;
+    @Nullable <T extends IView>
+    T getView();
 
+    void initView();
 
-    public void takeView(T view) {
-        mView = view;
-    }
-
-
-    public void dropView() {
-        mView = null;
-    }
-
-
-    public abstract void initView();
-
-    @Nullable
-    public T getView() {
-        return mView;
-    }
+    void dropView();
 }
